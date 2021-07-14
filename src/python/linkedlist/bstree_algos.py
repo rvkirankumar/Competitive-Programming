@@ -65,3 +65,15 @@ def level_order(_root):
                 q.enque(node.left)
             if node.right:
                 q.enque(node.right)
+
+
+
+if __name__ == '__main__':
+    bst = BinarySearchTree([30, 15, 60, 7, 22, 45, 75, 17, 27])
+    # bst.in_order(bst.root)
+    bst.in_order_nr()
+    bst.insert(50)
+    print()
+    bst.level_order()
+    bst.pre_order(bst.root)
+    print("Depth:", bst.depth())
